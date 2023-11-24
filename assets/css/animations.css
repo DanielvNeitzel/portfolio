@@ -1,0 +1,247 @@
+.anim_a1 {
+  display: inline-block;
+  position: relative;
+  padding: 0 5px;
+  width: auto;
+  height: 2px;
+}
+
+.anim_a1.is-active {
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: opacity_ctrl;
+  -webkit-animation-timing-function: ease;
+}
+
+.rotation-infinite {
+  -webkit-animation: rotating 1.5s cubic-bezier(0.9, -0.3, 0.3, 1.23);
+  -moz-animation: rotating 1.5s cubic-bezier(0.9, -0.3, 0.3, 1.23);
+  -ms-animation: rotating 1.5s cubic-bezier(0.9, -0.3, 0.3, 1.23);
+  -o-animation: rotating 1.5s cubic-bezier(0.9, -0.3, 0.3, 1.23);
+  animation: rotating 1.5s cubic-bezier(0.9, -0.3, 0.3, 1.23);
+}
+
+@keyframes opacity_ctrl {
+  0% {
+    background: linear-gradient(to right, #5bff8b 0%, #00ffff 100%);
+  }
+
+  50% {
+    background: none;
+  }
+
+  100% {
+    background: linear-gradient(to right, #5bff8b 0%, #00ffff 100%);
+  }
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem
+  }
+}
+
+.shiny.is-active {
+  animation: shiny 1s ease-out infinite;
+}
+
+.shockwave.is-active {
+  animation: shockwaveJump 2.5s linear infinite;
+}
+
+.shockwave:after {
+  animation: shockwave 1s .65s ease-out infinite;
+}
+
+.shockwave:before {
+  animation: shockwave 1s .5s ease-out infinite;
+}
+
+@keyframes shiny {
+  0% {
+    filter: drop-shadow(0px 0px 0px #49bf9d);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 3px #00ffff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 0px #49bf9d);
+  }
+}
+
+@keyframes shockwaveJump {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 3px #49bf9d);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 3px #49bf9d);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shockwave {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15);
+  }
+
+  95% {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0), inset 0 0 30px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(2.25);
+  }
+}
+
+/* Animation fade text */
+.fade-in-text {
+  font-family: Arial;
+  font-size: 60px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation typewriter text */
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: #ffffff;
+  }
+
+  to {
+    border-color: transparent;
+  }
+}
+
+/* Animation pulse text */
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Rotation Infinite */
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+  {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
