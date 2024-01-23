@@ -2083,9 +2083,22 @@ input[type="radio"]+label:before {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	/* -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	/* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.image.fit-ns {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.image.fit-ns img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	margin: 0 auto;
 }
 
 /* List */

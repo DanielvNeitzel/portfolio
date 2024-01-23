@@ -36,7 +36,7 @@
       close
     </span>
   </span>
-  <nav id="myMenu" class="side-menu-mob  hide">
+  <nav id="myMenu" class="side-menu-mob hide">
     <div class="row">
       <img onclick="goTop();location.reload(true)" class="image logo shockwave is-active" src="images/logo.png"
         alt="" />
@@ -44,10 +44,12 @@
     <ul class="gradientText">
       <li class="itemMenu"><a href="#" onclick="viewArticle('home')">Sobre mim</a></li>
       <li class="itemMenu"><a href="#" onclick="viewArticle('skillsList')">Conhecimentos & Habilidades</a></li>
-      <li class="itemMenu"><a href="#" onclick="viewArticle('recentJobs')">Trabalhos recentes</a></li>
-      <li class="itemMenu"><a href="#" onclick="viewArticle('personalJobs')">Projetos pessoais</a></li>
-      <li class="itemMenu"><span class="line-menu"></span></li>
-      <li class="itemMenu"><a href="#" onclick="viewArticle('artigos')">Artigos interessantes</a></li>
+      <li class="itemMenu"><a href="https://github.com/DanielvNeitzel" target="_blank">Meus projetos</a></li>
+      <li class="itemMenu"><a href="CV_Daniel_Neitzel_Vieira.pdf" download="CV_Daniel_Neitzel_Vieira.pdf" target="_blank">Currículo</a></li>
+      <li class="itemMenu hide"><a href="#" onclick="viewArticle('recentJobs')">Trabalhos recentes</a></li>
+      <li class="itemMenu hide"><a href="#" onclick="viewArticle('personalJobs')">Projetos pessoais</a></li>
+      <li class="itemMenu hide"><span class="line-menu"></span></li>
+      <li class="itemMenu hide"><a href="#" onclick="viewArticle('artigos')">Artigos interessantes</a></li>
     </ul>
   </nav>
 
@@ -71,7 +73,7 @@
     <section id="welcome" class="animate__animated animate__fadeIn">
       <div class="box alt">
         <div class="row gtr-50 gtr-uniform">
-          <div class="col-12"><span class="image fit"><img src="images/inicio.jpg" alt="" /></span></div>
+          <div class="col-12"><span class="image fit-ns"><img src="images/workdesk_v2.png" alt="" /></span></div>
         </div>
       </div>
       <header class="major">
@@ -172,7 +174,7 @@
         </article>
       </div>
       <ul class="actions">
-        <li class="center">
+        <li class="center hide">
           <button onclick="viewArticle('recentJobs')" class="button-retro retro">Visualizar Trabalhos Recentes</button>
         </li>
         <li class="center">
@@ -184,7 +186,7 @@
     <section id="skillsList" class="hide animate__animated animate__fadeIn">
       <div class="box alt">
         <div class="row gtr-50 gtr-uniform">
-          <div class="col-12"><span class="image fit"><img src="images/habilidades.jpg" alt="" /></span></div>
+          <div class="col-12"><span class="image fit"><img src="images/webApp.png" alt="" /></span></div>
         </div>
       </div>
       <h2>Conhecimentos & Habilidades</h2>
@@ -203,11 +205,19 @@
         </article>
         <article class="col-3 col-12-small work-item">
           <h3>ANGULAR</h3>
+          <span class="level-bar level-100 level-bar-animation">90%</span>
+        </article>
+        <article class="col-3 col-12-small work-item">
+          <h3>ANGULAR.JS</h3>
+          <span class="level-bar level-100 level-bar-animation">80%</span>
+        </article>
+        <article class="col-3 col-12-small work-item">
+          <h3>NODE.JS</h3>
           <span class="level-bar level-100 level-bar-animation">100%</span>
         </article>
         <article class="col-3 col-12-small work-item">
-          <h3>NODE</h3>
-          <span class="level-bar level-100 level-bar-animation">100%</span>
+          <h3>REACT / REACT NATIVE</h3>
+          <span class="level-bar level-80 level-bar-animation">80%</span>
         </article>
         <article class="col-3 col-12-small work-item">
           <h3>GIT</h3>
@@ -218,6 +228,10 @@
           <span class="level-bar level-80 level-bar-animation">80%</span>
         </article>
         <article class="col-3 col-12-small work-item">
+          <h3>JAVA</h3>
+          <span class="level-bar level-60 level-bar-animation">60%</span>
+        </article>
+        <article class="col-3 col-12-small work-item">
           <h3>BOOTSTRAP</h3>
           <span class="level-bar level-100 level-bar-animation">100%</span>
         </article>
@@ -226,7 +240,7 @@
           <span class="level-bar level-70 level-bar-animation">70%</span>
         </article>
         <article class="col-3 col-12-small work-item">
-          <h3>SQL</h3>
+          <h3>MySQL</h3>
           <span class="level-bar level-80 level-bar-animation">80%</span>
         </article>
         <article class="col-3 col-12-small work-item">
@@ -241,16 +255,15 @@
           <h3>PWA</h3>
           <span class="level-bar level-100 level-bar-animation">100%</span>
         </article>
-        <article class="col-3 col-12-small work-item">
-          <h3>JAVA</h3>
-          <span class="level-bar level-60 level-bar-animation">60%</span>
-        </article>
       </div>
       <ul class="actions">
-        <li class="center">
+        <li class="center hide">
           <button onclick="viewArticle('recentJobs')" class="button-retro retro">Visualizar Trabalhos Recentes</button>
         </li>
         <li class="center">
+          <a href="CV_Daniel_Neitzel_Vieira.pdf" download="CV_Daniel_Neitzel_Vieira.pdf" class="button-retro retro">Visualizar Currículo Completo</a>
+        </li>
+        <li class="center hide">
           <button onclick="viewArticle('personalJobs')" class="button-retro retro">Visualizar Trabalhos
             Pessoais</button>
         </li>
@@ -273,7 +286,7 @@
       </ul>
       <ul class="copyright ">
         <li>
-          <h1 class="gradientText footer-text">&copy; Todos os diretos reservados.</h1>
+          <h1 class="gradientText footer-text">2024 &copy; Todos os diretos reservados.</h1>
         </li>
       </ul>
     </div>
